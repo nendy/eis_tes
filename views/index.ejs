@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<base href="/">
+		<title>EIS::tes</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/elegant-icons-style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/list.js"></script>
+	</head>
+	<body>
+		<main class="main">
+			<div class="container-fluid">
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="navbar-brand">Barang</div>
+					<div class="page-status">Total :&nbsp;<b id="total_vw">-</b></div>
+					<ul class="pagination">
+						<li><a id="prev_page_btn"><i class="fa fa-chevron-left"></i></a></li>
+						<li><a id="range_vw"></a></li>
+						<li><a id="next_page_btn"><i class="fa fa-chevron-right"></i></a></li>
+					</ul>
+					<div class="pull-right">
+						<div class="page-status">Limit :&nbsp;
+							<input style="width:50px;display: inline" id="limit_inp" value="15" class="form-control"/>
+						</div>
+					</div>
+				</nav>
+				<div class="col-sm-5 pull-left">
+					<button id="add_btn" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add</button>
+				</div>
+				<form id="addForm" name="addForm" style="clear:both" class="panel panel-default">
+					<div class="panel-body">
+						<div class="col-md-6">
+							<label>Name:</label>
+							<input type="text" name="nama" placeholder="Name" class="form-control"/>
+						</div>
+						<div class="col-md-6">
+							<label>Value:</label>
+							<input type="text" name="value" placeholder="Value" class="form-control"/>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<input id="save_btn" type="button" value="Save" class="btn btn-default"/>
+						<input id="updt_btn" type="button" value="Update" class="btn btn-default"/>&nbsp;
+						<input type="reset" id="reset_btn" value="Cancel" class="btn btn-default"/>
+					</div>
+				</form>
+				<table class="table table-hover table-outline m-b-0 hidden-sm-down">
+					<thead class="thead-default">
+						<tr>
+							<th class="text-xs-center"><i class="fa fa-check-square-o"></i></th>
+							<th class="text-xs-center">ID</th>
+							<th>Name</th>
+							<th>Value</th>
+							<th class="text-xs-center">Registered</th>
+							<th class="text-xs-center"><i class="icon-settings"></i></th>
+						</tr>
+					</thead>
+					<tbody id="list_result"></tbody>
+				</table>
+			</div>
+		</main>
+	</body>
+</html>
