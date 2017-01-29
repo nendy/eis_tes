@@ -141,3 +141,4 @@ body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link i {
 .editFm #save_btn{display: none;}
 #updt_btn{display: none;}
 .editFm #updt_btn{display: inline;}
+.act_rows i:hover {cursor: pointer;}

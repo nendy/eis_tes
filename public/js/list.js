@@ -40,7 +40,7 @@ var list={
 				.append($(document.createElement('td')).text(arr.nama))
 				.append($(document.createElement('td')).text(arr.value))
 				.append($(document.createElement('td')).text(arr.created_at))
-				.append($(document.createElement('td'))
+				.append($(document.createElement('td')).attr('class','act_rows')
 					.append($(document.createElement('i')).attr({title:'Edit','class':'fa fa-edit',data:arr.id}).click(list.edit))
 					.append(' | ')
 					.append($(document.createElement('i')).attr({title:'Delete','class':'fa fa-trash-o',data:arr.id}).click(list.delete))
