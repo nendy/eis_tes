@@ -1,7 +1,11 @@
 {
   "name": "app_tes",
   "version": "0.1.0",
-  "private": true,
+  "author": "Nendi Ari <arie@nendy.name>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nendy/eis_tes.git"
+  },
   "scripts": {
     "start": "node ./server"
   },
